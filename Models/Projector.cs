@@ -4,4 +4,7 @@ public class Projector(string name, string connectorType, string resolution) : D
 {
     public string ConnectorType { get; } = connectorType;
     public string Resolution { get; } = resolution;
+
+    public override string GetDetails() =>
+        $"{this} | Connector: {ConnectorType}, Resolution: {Resolution}";
 }

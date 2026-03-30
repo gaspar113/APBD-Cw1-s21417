@@ -11,4 +11,8 @@ public abstract class User(string firstName, string lastName)
     public abstract int MaxActiveLoans { get; }
 
     public string FullName => $"{FirstName} {LastName}";
+
+    public string UserType => GetType().Name;
+
+    public override string ToString() => $"{FullName} ({UserType})";
 }

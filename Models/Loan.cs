@@ -31,5 +31,4 @@ public class Loan(User user, Device device, DateTime startDate, DateTime dueDate
                (ReturnDate.HasValue ? $", Returned: {ReturnDate:d}" : "") +
                $" [{status}]{penaltyInfo}";
     }
-
 }
